@@ -1,79 +1,33 @@
-# Welcome to React Router!
+# CrawlTest.com
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A static test page designed for validating web crawlers, scrapers, and content extraction algorithms. Built with modern web standards including semantic HTML5, JSON-LD structured data, and proper meta tags.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- Semantic HTML5 markup
+- JSON-LD structured data
+- OpenGraph & Twitter meta tags
+- robots.txt & sitemap.xml
+- Static content (no JavaScript required)
+- Curated list of open-source crawler tools
 
-## Getting Started
+## Usage
 
-### Installation
+Visit [crawltest.com](https://crawltest.com) to test your web crawler or scraper. The page is designed to be crawled once and provides a reliable baseline for testing parsing capabilities.
 
-Install the dependencies:
+## Development
+
+This is a static site built with React and Remix. To run locally:
 
 ```bash
 npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+## License
 
-## Previewing the Production Build
+MIT License - see [LICENSE](LICENSE) file for details.
 
-Preview the production build locally:
+## Contributing
 
-```bash
-npm run preview
-```
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-Deployment is done using the Wrangler CLI.
-
-To build and deploy directly to production:
-
-```sh
-npm run deploy
-```
-
-To deploy a preview URL:
-
-```sh
-npx wrangler versions upload
-```
-
-You can then promote a version to production after verification or roll it out progressively.
-
-```sh
-npx wrangler versions deploy
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+Feel free to submit issues, feature requests, or pull requests. This project is open source and welcomes contributions from the community.

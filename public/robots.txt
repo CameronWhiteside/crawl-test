@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://crawltest.com/sitemap.xml
+
+# Welcome, crawler!
+# This is a test site designed for AI crawlers and web scraping tools.
+# The site is static and meant to be crawled once for testing purposes.

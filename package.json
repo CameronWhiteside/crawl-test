@@ -1,6 +1,7 @@
 {
-	"name": "crawler-test",
+	"name": "crawl-test",
 	"private": true,
+	"sideEffects": false,
 	"type": "module",
 	"scripts": {
 		"build": "react-router build",
@@ -9,25 +10,32 @@
 		"dev": "react-router dev",
 		"postinstall": "npm run cf-typegen",
 		"preview": "npm run build && vite preview",
-		"typecheck": "npm run cf-typegen && react-router typegen && tsc -b"
+		"start": "react-router-serve ./build",
+		"typecheck": "tsc"
 	},
 	"dependencies": {
-		"isbot": "^5.1.27",
-		"react": "^19.1.0",
-		"react-dom": "^19.1.0",
-		"react-router": "^7.5.3"
+		"@remix-run/cloudflare": "^2.8.1",
+		"@remix-run/react": "^2.8.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router": "^7.0.0"
 	},
 	"devDependencies": {
 		"@cloudflare/vite-plugin": "^1.0.12",
-		"@react-router/dev": "^7.5.3",
+		"@cloudflare/workers-types": "^4.20241218.0",
+		"@remix-run/dev": "^2.8.1",
 		"@tailwindcss/vite": "^4.1.4",
 		"@types/node": "^20",
-		"@types/react": "^19.1.2",
-		"@types/react-dom": "^19.1.2",
+		"@types/react": "^18.2.55",
+		"@types/react-dom": "^18.2.19",
+		"eslint": "^8.56.0",
 		"tailwindcss": "^4.1.4",
-		"typescript": "^5.8.3",
-		"vite": "^6.3.3",
+		"typescript": "^5.3.3",
+		"vite": "^5.1.4",
 		"vite-tsconfig-paths": "^5.1.4",
-		"wrangler": "^4.20.3"
+		"wrangler": "^3.28.1"
+	},
+	"engines": {
+		"node": ">=18.0.0"
 	}
 }
