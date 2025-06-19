@@ -20,13 +20,6 @@ Visit [crawltest.com](https://crawltest.com) to test your web crawler or scraper
 This is a static site built with React and Remix. To run locally:
 
 ```bash
-npm install
-npm run dev
-```
-
-For production build:
-
-```bash
 npm run build
 npm run preview
 ```
