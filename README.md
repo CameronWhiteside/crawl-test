@@ -8,8 +8,6 @@ A test page designed for validating web crawlers, scrapers, and content extracti
 - JSON-LD structured data
 - OpenGraph & Twitter meta tags
 - robots.txt & sitemap.xml
-- Static content (no JavaScript required)
-- Curated list of open-source crawler tools
 
 ## Usage
 
