@@ -24,6 +24,13 @@ npm install
 npm run dev
 ```
 
+For production build:
+
+```bash
+npm run build
+npm run preview
+```
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
