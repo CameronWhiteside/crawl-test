@@ -48,8 +48,8 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
           <section className="mb-10">
             <div className="prose max-w-none text-gray-700">
               <p className="mb-3">
-                CrawlTest.com is a static test page built with semantic HTML5, JSON-LD structured data, and proper meta tags. It is designed for validating web crawlers, scrapers, and content
-                extraction algorithms.
+                CrawlTest.com is a test page built with semantic HTML5, JSON-LD structured data, and proper meta tags. It is designed for validating web crawlers, scrapers, and content extraction
+                algorithms.
               </p>
             </div>
           </section>
@@ -67,7 +67,7 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-black">Recommended Crawler Tools</h3>
+              <h3 className="text-xl font-semibold text-black">Recommended Tools</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -143,7 +143,7 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
                       Beautiful Soup
                     </a>
                     {" - "}
-                    <span className="text-sm">Python library for pulling data from HTML/XML</span>
+                    <span className="text-sm">Python library for pulling HTML/XML data</span>
                   </li>
                   <li>
                     <a
@@ -196,10 +196,6 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
                   <span className="text-black mr-3 text-lg">•</span>
                   <span>robots.txt & sitemap.xml</span>
                 </li>
-                <li className="flex items-center">
-                  <span className="text-black mr-3 text-lg">•</span>
-                  <span>Static content (no JS required)</span>
-                </li>
               </ul>
             </div>
 
@@ -232,26 +228,25 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
               </ul>
             </div>
           </div>
-
-          <div className="border-t border-gray-200 pt-8">
-            <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center mr-3">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-black">Source Code</h3>
-            </div>
-            <div className="text-gray-700">
-              <p>This site is open source and available on GitHub:</p>
-              <p className="mt-2">
-                <a href="https://github.com/CameronWhiteside/crawl-test" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">
-                  github.com/CameronWhiteside/crawl-test
-                </a>
-              </p>
-            </div>
-          </div>
         </main>
+
+        {/* Copyright Footer */}
+        <footer className="border-t border-gray-200 pt-8 mt-12">
+          <div className="text-center text-gray-500 text-sm">
+            <p>© {new Date().getFullYear()} CrawlTest.com. Built with ❤️ for the developer community.</p>
+            <p className="mt-1">
+              Open source and available on{" "}
+              <a
+                href="https://github.com/CameronWhiteside/crawl-test"
+                className="text-blue-600 hover:text-blue-800 underline hover:no-underline transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </p>
+          </div>
+        </footer>
 
         {/* Machine-readable structured data */}
         <script

@@ -1,6 +1,6 @@
 # CrawlTest.com
 
-A static test page designed for validating web crawlers, scrapers, and content extraction algorithms. Built with modern web standards including semantic HTML5, JSON-LD structured data, and proper meta tags.
+A test page designed for validating web crawlers, scrapers, and content extraction algorithms. Built with modern web standards including semantic HTML5, JSON-LD structured data, and proper meta tags.
 
 ## Features
 
@@ -17,9 +17,10 @@ Visit [crawltest.com](https://crawltest.com) to test your web crawler or scraper
 
 ## Development
 
-This is a static site built with React and Remix. To run locally:
+This is a site built with React and Remix. To run locally:
 
 ```bash
+npm install
 npm run build
 npm run preview
 ```
