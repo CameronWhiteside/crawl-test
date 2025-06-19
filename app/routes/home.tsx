@@ -39,26 +39,21 @@ export default function Home({ loaderData }: { loaderData: { timestamp: string; 
         {/* Human-readable content */}
         <main>
           <header className="text-center mb-12">
-            <div className="flex items-center justify-center mb-4">
-              <img src="/assets/crawl-test.svg" alt="CrawlTest Logo" className="w-16 h-16 mr-4" />
-              <h1 className="text-5xl font-bold text-black tracking-tight">CrawlTest.com</h1>
+            <div className="flex items-center justify-center mb-4 flex-col sm:flex-row">
+              <img src="/assets/crawl-test.svg" alt="CrawlTest Logo" className="w-12 h-12 sm:w-16 sm:h-16 mb-2 sm:mb-0 sm:mr-4" />
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black tracking-tight text-center">CrawlTest.com</h1>
             </div>
           </header>
 
           <section className="mb-10">
             <div className="prose max-w-none text-gray-700">
               <p className="mb-3">
-                CrawlTest.com is a static test page designed for validating web crawlers, scrapers, and content extraction algorithms. The site implements standard web practices including semantic
-                HTML5, JSON-LD structured data, and proper meta tags to provide a reliable baseline for testing parsing capabilities.
-              </p>
-              <p>
-                Use this page to verify your crawler can correctly extract titles, descriptions, structured data, and content hierarchy. The page is intentionally simple and static to avoid JavaScript
-                rendering requirements and provide consistent results across different crawling approaches.
+                CrawlTest.com is a static test page built with semantic HTML5, JSON-LD structured data, and proper meta tags. It is designed for validating web crawlers, scrapers, and content
+                extraction algorithms.
               </p>
             </div>
           </section>
 
-          {/* New section: Recommended Tools */}
           <div className="mb-10">
             <div className="flex items-center mb-4">
               <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center mr-3">
