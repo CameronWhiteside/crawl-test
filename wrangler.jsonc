@@ -4,7 +4,7 @@
  */
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "crawl-test",
+  "name": "crawltest",
   "compatibility_date": "2025-04-04",
   "main": "./workers/app.ts",
   "assets": { "directory": "./build/client", "binding": "ASSETS" },
